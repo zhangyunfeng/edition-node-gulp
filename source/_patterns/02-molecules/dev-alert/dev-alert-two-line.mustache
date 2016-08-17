@@ -1,0 +1,45 @@
+<style>
+.dev-alert-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: RGBA(0,0,0,0.5);
+    height: 100%;
+}
+
+.dev-alert-content {
+    width: 340px;
+    height: 220px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.dev-alert-confirm {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.dev-alert-button {
+  margin: 0 10px;
+}
+
+</style>
+<div class="dev-alert-mask">
+  <div class="dev-alert-content">
+    {{> atoms-dev-alert-title-two-line }} 
+    <div class="dev-alert-confirm">
+       {{> atoms-dev-alert-button }}  {{> atoms-dev-alert-button }} 
+    </div>
+  </div>
+</div>
