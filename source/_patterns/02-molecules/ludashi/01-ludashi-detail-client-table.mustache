@@ -3,12 +3,13 @@
     text-align: center;
     border: 0 none;
     width: 266px;
+    border-spacing: 0;
+    border-collapse: collapse;
   }  
+  
   .ludashi-detail-client-th {
     height: 30px;
     line-height: 30px;
-    border: 0 none;
-    border-left: 1px solid transparent;
     width: 106px;
     color: #039ae3;
     background-color: #e9f7ff;
@@ -16,11 +17,17 @@
     font-weight: normal;
     white-space: nowrap;    
     padding: 0;
+    position: relative;
+  }
+  
+  .ludashi-detail-client-th-border {
+    width: 159px;
+    box-sizing: content-box;
+    border-right: 1px solid #fff;
   }
   
   .ludashi-detail-client-th-first {
-    width: 159px;
-    border: 0 none;
+    width: 160px;
   }
   
   .ludashi-detail-client-tr-first td {
@@ -43,7 +50,7 @@
 <table class="ludashi-detail-client-table">  
   <tr class="ludashi-detail-client-tr-head">
     <th class="ludashi-detail-client-th ludashi-detail-client-th-first">
-      项目
+      <div class="ludashi-detail-client-th-border">项目</div>
     </th>
     <th class="ludashi-detail-client-th">
       得分

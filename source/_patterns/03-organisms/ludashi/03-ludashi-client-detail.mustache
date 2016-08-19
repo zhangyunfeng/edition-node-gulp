@@ -45,6 +45,12 @@
     margin-left: 6px;
 }
 
+.ludashi-client-detail-more {
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+}
+
 .float-clear {
     clear: both;
 }
@@ -63,7 +69,10 @@
       </div>
       <div class="float-clear"></div>
     </div>
-    <div></div>
+    <div class="ludashi-client-detail-more">
+      {{> atoms-td-text }}
+      {{> atoms-download-ludashi }}
+    </div>
   </div>
 </div>
 
