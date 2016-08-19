@@ -56,6 +56,18 @@
 }
 
 </style>
+
+<!--[if lte IE 8]> 
+<style>
+.ludashi-client-detail-container {
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0),
+         progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90),
+         progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180),
+         progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=270);
+}
+</style>
+<![endif]-->
 <div class="ludashi-client-detail-mask">
   <div class="ludashi-client-detail-mask-bg js-close">&nbsp;</div>
   <div class="ludashi-client-detail-container">    
@@ -70,7 +82,7 @@
       <div class="float-clear"></div>
     </div>
     <div class="ludashi-client-detail-more">
-      {{> atoms-td-text }}
+      {{> atoms-light-gray-text }}
       {{> atoms-download-ludashi }}
     </div>
   </div>
